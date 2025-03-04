@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko MDNACC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f8f8;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: white;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+        }
+        .login-btn {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .login-btn:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .btn-shop {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .btn-shop a {
+            padding: 10px 15px;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn-shopee { background: #ff5722; }
+        .btn-tokopedia { background: #2cbb5f; }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Toko MDNACC</div>
+        <a href="login.php" class="login-btn"><i class="fa fa-sign-in-alt"></i> Login</a>
+    </div>
+    
+    <div class="container">
+        <h2>Selamat Datang di Toko MDNACC</h2>
+        <p>Tempat terbaik untuk membeli aksesoris HP berkualitas.</p>
+        <img src="img/MDN_LOG_FIX-transformed-removebg-preview.png" alt="Toko MDNACC">
+        
+        <h3>Jualan Kami</h3>
+        <p>Casing HP | Tempered Glass | Charger Fast Charging | Headset</p>
+        
+        <h3>Kunjungi Toko Kami</h3>
+        <div class="btn-shop">
+            <a href="#" class="btn-shopee">Shopee</a>
+            <a href="#" class="btn-tokopedia">Tokopedia</a>
+        </div>
+    </div>
+</body>
+</html>
